@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+
+  <mat-toolbar-row>
+    <span>BondRx</span>
+    <mat-icon aria-hidden="false" aria-label="user verified icon">verified_user</mat-icon>
+
+    <div class="toolbar-custom-menu">
+      <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    </div>
+
+    <mat-menu #menu="matMenu" >
+      <button mat-menu-item>My Pets</button>
+    </mat-menu>
+
+    <span class="flex-spacer"></span>
+    <mat-icon aria-hidden="false" aria-label="user verified icon">verified_user</mat-icon>
+  </mat-toolbar-row>
+
+</mat-toolbar>

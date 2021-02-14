@@ -1,0 +1,12 @@
+
+.footer-content {
+    font-size: 15px;
+}
+
+.footer-content > mat-icon {    
+        margin-top: auto;
+        font-size: 14px;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+}

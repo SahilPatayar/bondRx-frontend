@@ -1,0 +1,28 @@
+<mat-sidenav-container class="app-sidenav-container">
+  <mat-sidenav class="app-sidenav mat-elevation-z10" mode="side" opened>
+
+    <mat-nav-list>
+      <a mat-list-item routerLinkActive="active" routerLink="/pet/my"> My Pets </a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLinkActive="active" routerLink="/pet/rx"> Prescriptions </a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLinkActive="active" routerLink="/pet/vaccine"> Vaccine Records </a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLinkActive="active" routerLink="/pet/note"> Notes </a>
+      <mat-divider></mat-divider>
+    </mat-nav-list>
+
+  </mat-sidenav>
+  <mat-sidenav-content class="app-sidenav-content">
+
+    <div class="main-content-wrapper">
+      <router-outlet></router-outlet>
+    </div>  
+
+    <div class="footer-wrapper">
+      <app-footer></app-footer>
+    </div>
+    
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
